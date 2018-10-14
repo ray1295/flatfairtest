@@ -19,15 +19,16 @@ export class LoginComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
 
-  penDialog(): void {
+  openDialog(): void {
     const dialogRef = this.dialog.open(LoginModalComponent, {
-      width: '250px',
+      width: '600px',
+      height: '400px',
       data: {username: this.username, password: this.password}
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.password = result;
+      this.username = result;
     });
   }
 

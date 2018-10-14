@@ -12,6 +12,7 @@
     padding-right: 30px;
     &__logo-img {
         width: 200px;
+        cursor: pointer;
     }
     &__spacer{
         flex: 1 1 auto;
@@ -29,4 +30,8 @@
     &__action-buttons--login {
         background-color: $color-primary;
     }
+}
+
+.bright {
+    color: $color-secondary;
 }
