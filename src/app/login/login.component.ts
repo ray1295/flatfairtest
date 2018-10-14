@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { LoginModalComponent } from '../login-modal/login-modal.component';
+
+export interface loginData {
+  username: string;
+  password: string;
+}
 
 @Component({
   selector: 'app-login',
@@ -7,7 +14,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  username: string;
+  password: string;
+
+  constructor(public dialog: MatDialog) { }
+
+  penDialog(): void {
+    const dialogRef = this.dialog.open(LoginModalComponent, {
+      width: '250px',
+      data: {username: this.username, password: this.password}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.password = result;
+    });
+  }
 
   ngOnInit() {
   }

@@ -18,30 +18,3 @@
 button {
   @extend %button-shared;
 }
-
-// Using mixin to add animation to buttons
-
-@mixin transform($property) {
-  transform: $property;
-}
-
-// Button modifiers classes
-
-.success {
-  @extend %button-shared;
-  background-color: $color-go;
-}
-
-.warning {
-  @extend %button-shared;
-  background-color: $color-destructive;
-}
-
-.disabled {
-  @extend %button-shared;
-}
-
-.info {
-  @extend %button-shared ;
-  background-color: $color-info;
-}

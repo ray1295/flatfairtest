@@ -1,8 +1,12 @@
-<mat-toolbar>
+<mat-toolbar class="nav">
   <mat-toolbar-row>
-    <span>Third Line</span>
-    <span class="example-spacer"></span>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
+    <!-- Flatfair text logo -->
+    <img class="nav__logo-img"  src="{{ logoPath }}">
+    <!-- Spacer flex -->
+    <span class="nav__spacer"></span>
+    <!-- Login modal button  -->
+    <app-login></app-login>
+    <!-- Register route button  -->
+    <button class="nav__action-buttons nav__action-buttons--register" routerLink="register">register</button>
   </mat-toolbar-row>
 </mat-toolbar>
