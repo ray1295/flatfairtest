@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { LoginModalComponent } from '../login-modal/login-modal.component';
+import { Http, Response, Request, RequestMethod } from '@angular/http';
 
 export interface loginData {
   username: string;
