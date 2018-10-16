@@ -29,6 +29,8 @@
 html, body {
   height: 100%;
   display: block;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -39,5 +41,6 @@ body {
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+  }

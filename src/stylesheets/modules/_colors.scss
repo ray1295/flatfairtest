@@ -1,10 +1,38 @@
 // Using variables to call colors
-
 $color-destructive: #ff3131;
 $color-secondary: #ff9c00;
 $color-go: #1dca7f;
 $color-primary: #6785ff;
+$color-primary-dark: #31374d;
 $color-white: #ffffff;
 $color-light-gray: #f5f5f5;
 $color-gray: #888888;
 $color-dark: #181818;
+
+.destructive{
+    color: #ff3131;
+}
+.secondary {
+    color: #ff9c00;
+} 
+.go {
+    color: #1dca7f;
+} 
+.primary {
+    color: #6785ff;
+} 
+.primary-dark {
+    color: #31374d;
+}
+.white {
+    color: #ffffff;
+}
+.light-gray {
+    color: #f5f5f5;
+}
+.gray {
+    color: #888888;
+}
+.dark {
+    color: #181818;
+}

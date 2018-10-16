@@ -13,6 +13,8 @@ import { RegisterComponent } from './register/register.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginAuthPageComponent } from './login-auth-page/login-auth-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     RegisterComponent,
     ResetPasswordComponent,
     HomeComponent,
-    NavigationComponent
+    NavigationComponent,
+    LoginAuthPageComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     BrowserAnimationsModule,
     MaterialsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   entryComponents: [LoginModalComponent],

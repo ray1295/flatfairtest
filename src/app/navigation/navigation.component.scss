@@ -1,37 +1,50 @@
 // Mobile
-@media only screen and (min-width: 320px) {}
+@media only screen and (min-width: 320px) {
+    .nav {
+        background-color: $color-white;
+        padding-right: 30px;
+        &__logo-img {
+            width: 100px;
+            cursor: pointer;
+        }
+        &__spacer{
+            -webkit-box-flex: 1;
+                -ms-flex: 1 1 auto;
+                    flex: 1 1 auto;
+        }
+        &__action-buttons {
+            color: $color-white;
+            border: none;
+            text-transform: capitalize;
+            margin: 0 5px;
+            font-weight: bold !important;
+        }
+        &__action-buttons--register{
+            background-color: $color-secondary;
+        }
+        &__action-buttons--login {
+            background-color: $color-primary;
+        }
+    }
+}
 // Tablet 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .nav {
+        &__logo-img {
+            width: 200px;
+        }
+        &__spacer{
+        }
+        &__action-buttons {
+        }
+        &__action-buttons--register{
+        }
+        &__action-buttons--login {
+        }
+    }
+}
 // Desktop 
 @media only screen and (min-width: 1024px) {}
 // Desktop
 @media only screen and (min-width: 1280px) {}
 
-.nav {
-    background-color: $color-white;
-    padding-right: 30px;
-    &__logo-img {
-        width: 200px;
-        cursor: pointer;
-    }
-    &__spacer{
-        flex: 1 1 auto;
-    }
-    &__action-buttons {
-        color: $color-white;
-        border: none;
-        text-transform: capitalize;
-        margin: 0 5px;
-        font-weight: bold !important;
-    }
-    &__action-buttons--register{
-        background-color: $color-secondary;
-    }
-    &__action-buttons--login {
-        background-color: $color-primary;
-    }
-}
-
-.bright {
-    color: $color-secondary;
-}

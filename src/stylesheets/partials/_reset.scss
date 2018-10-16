@@ -1,28 +1,14 @@
 // Reset elements here
-ul,
-ol {
-  margin:  0;
-  padding: 0;
-  list-style: none;
-}
-
-li {display: inline-block;}
-
-input, textarea, select, button {
-  outline: none;
-}
-
 a { 
-  // color: $color-light-gray;
   text-decoration: none;
 }
 
-.row {
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-}
-
-// 
 .mat-toolbar {
   font: 400 13px/24px Roboto,"Helvetica Neue",sans-serif;
+}
+
+button, input, a, img,
+button:active, input:active, a:active, img:active,
+button:focus, input:focus, a:focus, img:focus, { 
+  outline: none;
 }
