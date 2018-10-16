@@ -55,10 +55,10 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmitFirst() {
-    console.log(this.firstRegisterForm.value);
+    // console.log(this.firstRegisterForm.value);
   }
   onSubmitSecond() {
-    console.log(this.secondRegisterForm.value);
+    // console.log(this.secondRegisterForm.value);
   }
 
 }

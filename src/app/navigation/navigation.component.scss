@@ -3,15 +3,18 @@
     .nav {
         background-color: $color-white;
         padding-right: 30px;
+        // Nav img 
         &__logo-img {
             width: 100px;
             cursor: pointer;
         }
+        // Nav content spacer
         &__spacer{
             -webkit-box-flex: 1;
                 -ms-flex: 1 1 auto;
                     flex: 1 1 auto;
         }
+        // Nav button
         &__action-buttons {
             color: $color-white;
             border: none;
@@ -19,9 +22,11 @@
             margin: 0 5px;
             font-weight: bold !important;
         }
+        // Nav regitser button
         &__action-buttons--register{
             background-color: $color-secondary;
         }
+        // Nav login button
         &__action-buttons--login {
             background-color: $color-primary;
         }
@@ -30,16 +35,9 @@
 // Tablet 
 @media only screen and (min-width: 768px) {
     .nav {
+        // Nav img 
         &__logo-img {
             width: 200px;
-        }
-        &__spacer{
-        }
-        &__action-buttons {
-        }
-        &__action-buttons--register{
-        }
-        &__action-buttons--login {
         }
     }
 }

@@ -3,8 +3,7 @@
     <!-- Regitser heading -->
     <div class="register__heading">
         <h1><b>Find deposit-free</b> homes near you</h1>
-        <h4>Tell us what you’re looking for and we'll contact our most suitable letting partner.
-        </h4>
+        <h4>Tell us what you’re looking for and we'll contact our most suitable letting partner.</h4>
     </div>
     <!-- End of register heading -->
 
@@ -19,7 +18,8 @@
                     <h4><b>Your Personal Details</b></h4>
                     <p>Create your personal account.</p>
                 </ng-template>
-                <table class="" cellspacing="0">
+                <!-- User name input -->
+                <table cellspacing="0">
                     <tr>
                         <td>
                             <!-- First Name input -->
@@ -69,7 +69,7 @@
                     <mat-hint></mat-hint>
                 </mat-form-field>
 
-                <!-- Action button - goes to next step -->
+                <!-- Action button : Button -> goes to next step -->
                 <button class="action-button" matStepperNext type="submit" [disabled]="!firstRegisterForm.valid">Continue</button>
             </form>
         </mat-step>
@@ -151,12 +151,12 @@
         </mat-step>
         <!-- End of second form -->
 
-        <!-- Third stepper -- User information display -->
+        <!-- Third stepper -->
         <mat-step>
             <ng-template matStepLabel>
                 <h4><b>Your Account</b></h4>
             </ng-template>
-           <p> Thank you for registering. We'll be in touch soon!</p>
+            <p> Thank you for registering. We'll be in touch soon!</p>
         </mat-step>
     </mat-vertical-stepper>
     <!-- End of stepper -->

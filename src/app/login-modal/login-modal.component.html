@@ -4,7 +4,7 @@
   <form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
     <div class="form__field">
       <mat-dialog-content>
-        <!-- Close modal button -->
+        <!-- Button -> Close modal button -->
         <button class="form__field__close" (click)="onCloseCancel()" [mat-dialog-close]="true">
           <i class="material-icons">
             close
@@ -12,6 +12,7 @@
         </button>
         <!-- Sign up redirect message/button -->
         <p class="form__field__register">Don't have an account?
+          <!-- Link -> Register page -->
           <a class="primary" routerLink="register" (click)="onCloseCancel()"> <b>Sign up.</b></a>
         </p>
         <!-- Email input -->
@@ -26,9 +27,9 @@
       </mat-dialog-content>
       <!-- Action buttons -->
       <mat-dialog-actions class="form__field__actions">
-        <!-- Forgotten password -->
+        <!-- Link -> Forgotten password -->
         <a class="primary" routerLink="resetPassword" (click)="onCloseCancel()">Forgot your passwrod?</a>
-        <!-- Submit button  -->
+        <!-- Button -> Submit button  -->
         <button type="submit" [disabled]="!loginForm.valid" >Sign In</button>
       </mat-dialog-actions>
       <!-- End of action button -->
