@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
 
   logoPath: string = '/assets/images/flatfair.png';
+  
   constructor() { }
 
   ngOnInit() {

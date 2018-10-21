@@ -3,8 +3,8 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { LoginModalComponent } from '../login-modal/login-modal.component';
 
 export interface loginData {
-  username: string;
-  password: string;
+  username: string,
+  password: string,
 }
 
 @Component({
